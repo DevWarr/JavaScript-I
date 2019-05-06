@@ -42,3 +42,23 @@ exampleArray = [1,2,3,4];
 // console.log(triple);
 triple = exampleArray.map(num => num * 3)
 console.log(triple)
+
+
+
+// Callbacks are (very simply put) functions that are invoked by another function. EXAMPLE!
+
+function funstuff(string, callback) {
+    console.log(`I'm about to start ${string}, and then I will ${callback()}!`); 
+}
+
+funstuff("Sewing", function() {
+    return "play more Sekiro"
+});
+
+// function 'funstuff' has a string and a function as parameters.
+// When we inkoke it, we have to specify what the function is.
+// In this case, the function is simply more words. Nothing complex.
+// But we could do something more complex.
+// Look into arrays.js for the STRETCH goals:
+// Methods like 'map' and 'filter' use callback functions as arguments too.
+// Those lines of code give more real world examples of callback functions.

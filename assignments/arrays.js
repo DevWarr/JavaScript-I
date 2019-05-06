@@ -84,6 +84,9 @@ for (i = 0; i < inventory.length; i++) {
 
 console.log(carModels.sort());
 
+// STRETCH(using map)
+console.log(inventory.map(obj => obj.car_model).sort());
+
 
 
 // ==== Challenge 4 ====
@@ -95,6 +98,9 @@ for (let index of inventory) {
 }
 
 console.log(carYears.sort());
+
+// STRETCH (using map)
+console.log(inventory.map(obj => obj.car_year).sort());
 
 
 
@@ -110,6 +116,9 @@ for (let index of carYears) {
 
 console.log(`${oldCars.length} cars were made before the year 2000.`); 
 
+// STRETCH (using map and filter)
+console.log(`${inventory.map(obj => obj.car_year).filter(x => x < 2000).length} cars were made before 2000. Sponsored by "map" and "filter"!`);
+
 
 
 // ==== Challenge 6 ====
@@ -124,5 +133,6 @@ for (i = 0; i < inventory.length; i++) {
 
 console.log(BMWAndAudi);
 
-
+// STRETCH (using filter)
+console.log(inventory.filter(obj => obj.car_make === "BMW" || obj.car_make === "Audi"));
 
