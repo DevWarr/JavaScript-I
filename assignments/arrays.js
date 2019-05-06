@@ -132,6 +132,7 @@ for (i = 0; i < inventory.length; i++) {
 }
 
 console.log(BMWAndAudi);
+console.log(JSON.stringify(BMWAndAudi));
 
 // STRETCH (using filter)
 console.log(inventory.filter(obj => obj.car_make === "BMW" || obj.car_make === "Audi"));
